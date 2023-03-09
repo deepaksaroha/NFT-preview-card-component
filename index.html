@@ -151,6 +151,10 @@
         position: relative;
       }
 
+      .main-img-container:hover>.overlay{
+        display: flex;
+      }
+
       .overlay {
         position: absolute;
         width: 100%;
@@ -158,20 +162,16 @@
         top: 0;
         left: 0;
         border-radius: 15px;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         background-color: hsla(178, 100%, 50%, 0.5);
-        opacity: 0;
       }
       
       .view-icon{
         height: 40px;
       }
 
-      .overlay:hover{
-        opacity: 1;
-      }
     </style>
   </head>
   <body>
